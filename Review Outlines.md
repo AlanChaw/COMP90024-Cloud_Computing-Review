@@ -85,3 +85,36 @@ Clustered computing is when two or more computers serve a single resource.
 5. Shared Memory vs. Distributed Memory
 	- Multi-threads: Shared Memory
 	- MPI: Distrubuted Memory Parallel Programming
+
+## Week 5 - Cloud Computing, NeCTAR, Ansible, Git
+1. The Most Common Cloud Models
+	- Deployment Models
+		- Private
+			- Control, secure, consolidation of resources
+			- Utility challange, management overhead(超支)
+		- Public
+			- Utility computing, Can focus on core business, cost-effective
+			- Security proble, loss of control, possible lock-in
+		- Community
+		- Hybrid (杂交)
+			- use privae cloud, but burst into public cloud when needed
+			- how to move data?, how to decide which data to be public?
+	- Delivery(交付) Models
+		- Software as a Service (SaaS)
+			- Gmail, office 365...
+		- Platform as a Service (PaaS)
+			- Google App Engine, Amazon Elastic MapReduce
+		- Infrastructure(底部结构) as a Service (IaaS) (primary focus of this course)
+			- AWS, Orical Public Cloud, Nectar...  
+
+	![Delivery_models](./Pictures/Delivery_models.jpg)  
+	
+2. Essential Characteristics (Same as week 1)
+	- On-demand self-service (随需自动服务）
+	- Broad network access (随时随地用任何网络存取)
+	- Resource pooling (多人共享资源池)
+	- Rapid elasticity (快速重新部署灵活度)
+	- Measured service (被监控与测量的服务)  
+
+2. NeCTAR Research Cloud
+		- Based on 
