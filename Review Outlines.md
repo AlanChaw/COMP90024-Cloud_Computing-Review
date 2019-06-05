@@ -11,12 +11,11 @@
 	- Data clouds  
 	- Application clouds  
 	- balabala clouds, etc..  
-3. Brief history  
+3. Brief history
 	1)  once had detailed standards  
 	2) then had open distributed processing with slightly less strict and compliance(顺从的？) demands  
-	3) Mid-90s: **Transparency** and **Heterogeneity**（异质）of computer interactions. Forcus on **computer-computer interaction**.   
-
-4. Grid Computing  
+	3) Mid-90s: **Transparency** and **Heterogeneity**（异质）of computer interactions. Forcus on **computer-computer interaction**.
+4. Grid Computing
 **Grid computing is a processor architecture that combines computer (may be heterogeneous or hypogeneous) resources from various domains to reach a main objective.** In grid computing, the computers on the network can work on a task together, thus functioning as a supercomputer.
 
 ## Week 2 - Domain Drivers  
@@ -24,10 +23,9 @@
 	- More and more data, databases  
 	- Distributed, completely heterogeneous data  
 	- Data is messy
-2. Solution: Cluster and Cloud Computing.  
-Where is Domain drivers computing??????  F**K Richard.  
-
-3. Domain-driven design (From wiki)  
+2. Solution: Cluster and Cloud Computing.
+Where is Domain drivers computing??????  F\*\*K Richard.  
+3. Domain-driven design (From wiki)
 Domain-driven design (DDD) is an approach to software development for complex needs by connecting the implementation to an evolving model.  
 领域驱动设计是一种通过将实现连接到持续进化的模型来满足复杂需求的软件开发方法.  
 
