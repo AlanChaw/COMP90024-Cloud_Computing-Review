@@ -6,18 +6,17 @@
 	- Resource pooling  
 	- Rapid elasticity  
 	- Measured service
-	
 2. Flavours
 	- Compute clouds  
 	- Data clouds  
 	- Application clouds  
 	- balabala clouds, etc..  
-	
-3. Brief history
+3. Brief history  
 	1)  once had detailed standards  
 	2) then had open distributed processing with slightly less strict and compliance(顺从的？) demands  
-	3) Mid-90s: **Transparency** and **Heterogeneity**（异质）of computer interactions. Forcus on **computer-computer interaction**.
-4. Grid Computing
+	3) Mid-90s: **Transparency** and **Heterogeneity**（异质）of computer interactions. Forcus on **computer-computer interaction**.  
+
+4. Grid Computing  
 **Grid computing is a processor architecture that combines computer (may be heterogeneous or hypogeneous) resources from various domains to reach a main objective.** In grid computing, the computers on the network can work on a task together, thus functioning as a supercomputer.
 
 ## Week 2 - Domain Drivers  
@@ -25,10 +24,8 @@
 	- More and more data, databases  
 	- Distributed, completely heterogeneous data  
 	- Data is messy
-	
-2. Solution: Cluster and Cloud Computing.
-
-Where is Domain drivers computing??????  F\*\*K Richard.  
+2. Solution: Cluster and Cloud Computing.  
+	Where is Domain drivers computing??????  F\*\*K Richard.  
 
 3. Domain-driven design (From wiki)
 Domain-driven design (DDD) is an approach to software development for complex needs by connecting the implementation to an evolving model.  
@@ -96,7 +93,6 @@ Clustered computing is when two or more computers serve a single resource.
 5. Shared Memory vs. Distributed Memory
 	- Multi-threads: Shared Memory
 	- MPI: Distrubuted Memory Parallel Programming
-<<<<<<< HEAD
 
 ## Week 5 - Cloud Computing, NeCTAR, Ansible, Git
 1. The Most Common Cloud Models
@@ -128,7 +124,31 @@ Clustered computing is when two or more computers serve a single resource.
 	- Rapid elasticity (快速重新部署灵活度)
 	- Measured service (被监控与测量的服务)  
 
-2. NeCTAR Research Cloud
-		- Based on 
-=======
->>>>>>> 54ad99e666fa96cc23604c8964d1a229f1d1d57e
+3. NeCTAR Research Cloud
+	- Based on OpenStack
+	- Services
+		- Compute service, Image service, Block storage service, object storage service ...
+
+4. Automation (Ansible, specifically)
+	- Deploying complex cloud systems requires a lot of moving parts
+	- Automation provides a record of what you did
+	- Codifies knowledge about the system
+	- Makes provess repeatable and programmable
+
+5. Ansible
+	- Easy to learn: Playbooks in YAML, templates in Jinja2, sequential execution.
+	- Minimal requirements: Single command to install, uses ssh to connect to target machine
+	- Repeatable
+	- Extensible
+	- Supports push or pull
+	- Rolling updates
+	- Intentory management (存货管理？)
+
+6. Git
+	- Distributed (decentralized) version-control system. 
+	- Keep tracking changes
+	- Revert to a specific checking point
+	- Work with people
+
+# Week 6 - Web Services, ReST Services, Twitter, Docker and Containerisation
+
