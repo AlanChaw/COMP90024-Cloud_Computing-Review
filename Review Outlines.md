@@ -36,6 +36,22 @@ Domain-driven design (DDD) is an approach to software development for complex ne
 	- Vertical Computational Scaling (Faster processors)
 	- Horizontal Computational Scaling (More processors): Easy to add more, but hard to design and develop. 
 	
+2. Amdahl's Law
+
+
+
+3. Gustafson-Barsis's Law
+	
+
+4. Computer Architectures (Flynn's Taxonomy)
+	- SISD (Single instruction, Single Data stream
+		- Single control unit (CU/CPU) fetches single Instruction Stream from memory.
+	- SIMD (Single instruction, Multiple Data streams)
+		- multiple processing elements that perform the same operation on multiple data points simultaneously. (Image processing)
+	- MISD (Multiple instruction, Single Data stream)
+		- Parallel computing architecture where many functional units (PU/CPU) perform different operations on the same data. (Not common)
+	- MIMD (Multiple instruction, Multiple Data streams)		- number of processors that function asynchronously and independently (HPC)
+	
 2. Approaches for Parallelism
 	- **Explicit**(明确的) vs **Implicit**(含蓄的) parallelism
 		- **Implicit**: Supported by parallel languages and parallelizing compliers. Hard to do.
@@ -68,15 +84,34 @@ Domain-driven design (DDD) is an approach to software development for complex ne
 	- Dependene analysis is hard for core that uses pointers, recursion, ...;
 	- Loops can have unknown number of iterations
 	- Access to global resources (e.g. Shared variables)  
-	
-6. Parallelisation Paradigms(范例)
-	- Master Worker/Slave Model
-	- Single-Program, Multiple-Data
-	- Data Pipelining
-	- Divide and Conquer
-	- Speculative(投机的) Parallelism 
-	- Parametric Computation  
 
+6. Strategies for Development of Parallel/Distributed Systems
+	- Automatic parallelization
+	- Parallel strategies
+	- Major Recording
+
+7. Design Stages of Parallel Programs
+	- Partitioning
+	- Communication
+	- Agglomeration
+	- Mapping
+
+	
+8. Parallelisation Paradigms(范例)
+	- Master Worker/Slave Model
+		- Masterdecomposesthe problem into small tasks, distributes to workers and gathers partial results to produce the final result
+	- Single-Program, Multiple-Data (SPMD)
+		- Each process executes the same piece of code, but on different parts of the data. Data is typically split among the available processors. 
+	- Data Pipelining
+		- Suitable for applications involving multiple stages of execution, that typically operate on large number of data sets.
+	- Divide and Conquer
+		- Aproblemisdividedinto two or more sub problems, and each of these sub problems are solved independently, and their results are combined. 
+		- 3 operations:split, compute, and join
+		- Master-worker / **task-farming** is like divide and conquer with master doing both split and join operation.
+	- Speculative(投机的) Parallelism 
+	- Parametric Computation
+
+	
 ## Week 4 - Spartan HPC System
 1. HPC:  
 High-performance computing (HPC) is any computer system whose architecture allows for above average performance. A system that is one of the most powerful in the world, but is poorly designed, could be a "supercomputer".
