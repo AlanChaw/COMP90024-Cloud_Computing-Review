@@ -24,22 +24,22 @@
 ## Question 2
 **A) SOA**
 
-	Principle | Chinese | Description
-	:---- | :--- | :--- 
-	Standardized service contract | 标准服务契约 | 服务要遵循一个服务描述
-	Service loose coupling |  服务松耦合 | 服务之间的依赖要最小化
-	Service abstraction | 服务抽象 | 服务将自己的业务逻辑封装起来，对外部世界是隐藏的
-	Service reusability | 服务复用 | 业务逻辑切割成多个服务以实现复用的最大化
-	Service autonomy | 服务自治 | 服务应该有对它们封装的逻辑的控制权
-	Service statelessness | 服务无状态 | 理想情况下，服务应该是没有状态的
-	Service discoverablity | 服务发现 | 服务可以被发现，通常通过一个接口注册
-	Service composability | 服务组合 | 一个大问题可以被分割成很多小问题
-	Service granularity | 服务粒度 | 选择合适的服务粒度
-	Service normalization | 服务标准化
-	Service optimization | 服务最优化
-	Service relevance | 服务关联
-	Service encapsulation | 服务封装 | 内部实现对用户是隐藏的
-	Service location transparency | 服务地点透明 | 用户可以调用服务而无论服务的实际网络位置是什么
+Principle | Chinese | Description
+:---- | :--- | :--- 
+Standardized service contract | 标准服务契约 | 服务要遵循一个服务描述
+Service loose coupling |  服务松耦合 | 服务之间的依赖要最小化
+Service abstraction | 服务抽象 | 服务将自己的业务逻辑封装起来，对外部世界是隐藏的
+Service reusability | 服务复用 | 业务逻辑切割成多个服务以实现复用的最大化
+Service autonomy | 服务自治 | 服务应该有对它们封装的逻辑的控制权
+Service statelessness | 服务无状态 | 理想情况下，服务应该是没有状态的
+Service discoverablity | 服务发现 | 服务可以被发现，通常通过一个接口注册
+Service composability | 服务组合 | 一个大问题可以被分割成很多小问题
+Service granularity | 服务粒度 | 选择合适的服务粒度
+Service normalization | 服务标准化
+Service optimization | 服务最优化
+Service relevance | 服务关联
+Service encapsulation | 服务封装 | 内部实现对用户是隐藏的
+Service location transparency | 服务地点透明 | 用户可以调用服务而无论服务的实际网络位置是什么
 
 
 
