@@ -1,3 +1,5 @@
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
 # Review Outlines
 ## Week 1 - History of Cloud Computing and Grid Computing  
 1. Cloud Characteristics
@@ -43,7 +45,6 @@ Domain-driven design (DDD) is an approach to software development for complex ne
 3. Gustafson-Barsis's Law
 
 	- 简单的一个数学计算, 根据公式(理论上的，忽略通信开销)  
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 $$并行加速后所用的时间 = 不可并行部分所用的时间 + \frac{可并行部分串行执行所用的时间}{核数}$$  
 
 	- 这里的α
