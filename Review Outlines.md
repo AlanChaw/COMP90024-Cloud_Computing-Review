@@ -194,10 +194,10 @@ Clustered computing is when two or more computers serve a single resource.
 	- SOAP WS is built upon the **Remote Procedure Call** paradigm
 		- 过程远程调用(RPC): 是一个计算机通信协议。该协议允许运行于一台计算机的程序调用另一台计算机的子程序，而程序员无需额外地为这个交互作用编程。
 	- ReST is centered around resources, and the way they can be manipulated remotely.
-	- **ReST is a style** to use HTTP instead of a protocol
-	- **SOAP is a stack of protocols** that covers every aspect of using a remote service, from service discovery, balabala...
+	- Actually **ReST is more of a style** to use HTTP than a separate protocol 
+	- **SOAP is a stack of protocols** that covers every aspect of using a remote service, from service discovery, to service description, to the actual request/response
 
-6. WSDL - Web Services Description Language (Web 服务描述语言)
+6. WSDL - Web Services Description Language (Web 服务描述语言, SOAP使用WSDL)
 	- An XML-based interface description language that describes the functionality offered by a web service.
 	- WSDL provides a **machine-readable** description.
 		- How the service can be called
