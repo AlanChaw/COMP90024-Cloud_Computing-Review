@@ -1,4 +1,3 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
 # Review Outlines
 ## Week 1 - History of Cloud Computing and Grid Computing  
@@ -43,7 +42,7 @@ Domain-driven design (DDD) is an approach to software development for complex ne
 	- 类似极限的思想。假设忽略通信开销。当一个程序有95%可并行，5%不可并行，那就算这95%通过并行在一瞬间执行完，剩下的5%也还是要用那么多时间，所以理论上最大能加速20倍.
 
 3. Gustafson-Barsis's Law
-
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 	- 简单的一个数学计算, 根据公式(理论上的，忽略通信开销)  
 $$并行加速后所用的时间 = 不可并行部分所用的时间 + \frac{可并行部分串行执行所用的时间}{核数}$$  
 
