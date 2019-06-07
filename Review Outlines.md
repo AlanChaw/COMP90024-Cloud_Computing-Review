@@ -1,3 +1,4 @@
+
 # Review Outlines
 ## Week 1 - History of Cloud Computing and Grid Computing  
 1. Cloud Characteristics
@@ -38,9 +39,22 @@ Domain-driven design (DDD) is an approach to software development for complex ne
 	
 2. Amdahl's Law
 
-
+	- 类似极限的思想。假设忽略通信开销。当一个程序有95%可并行，5%不可并行，那就算这95%通过并行在一瞬间执行完，剩下的5%也还是要用那么多时间，所以理论上最大能加速20倍.
 
 3. Gustafson-Barsis's Law
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+	- 简单的一个数学计算, 根据公式(理论上的，忽略通信开销)  
+$$并行加速后所用的时间 = 不可并行部分所用的时间 + \frac{可并行部分串行执行所用的时间}{核数}$$  
+
+	- 这里的α
+$$α = \frac{不可并行部分所用的时间}{并行后所用的总时间}$$
+
+	- 最后公式 (这里N是核数)
+$$加速倍数 = S(N) = α + N(1-α)$$
+
+	- Example: N=32, 并行后时间128s, 不可并行部分运行12s
+$$α = \frac{12}{128} = 0.09375$$
+$$S(32) = α + 32(1-α)≈29$$
 	
 
 4. Computer Architectures (Flynn's Taxonomy)
@@ -50,8 +64,9 @@ Domain-driven design (DDD) is an approach to software development for complex ne
 		- multiple processing elements that perform the same operation on multiple data points simultaneously. (Image processing)
 	- MISD (Multiple instruction, Single Data stream)
 		- Parallel computing architecture where many functional units (PU/CPU) perform different operations on the same data. (Not common)
-	- MIMD (Multiple instruction, Multiple Data streams)		- number of processors that function asynchronously and independently (HPC)
-	
+	- MIMD (Multiple instruction, Multiple Data streams)
+		- number of processors that function asynchronously and independently (HPC)  
+
 2. Approaches for Parallelism
 	- **Explicit**(明确的) vs **Implicit**(含蓄的) parallelism
 		- **Implicit**: Supported by parallel languages and parallelizing compliers. Hard to do.
