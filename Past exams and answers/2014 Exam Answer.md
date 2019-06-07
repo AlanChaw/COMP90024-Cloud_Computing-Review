@@ -149,8 +149,9 @@ Research computing is the software applications used by a research community to 
 #### (4B)
 **A parallel program takes 128 seconds to run on 32 processors. The total time spent in the sequential part of the program is 12 seconds. What is the scaled speedup?**
 
-Here alpha = (128-12)/128 = 116/128 so the scaled speed up is (116/128) + (1 - 116/128)*32 = approx 29. 
+Here alpha = 12/128  so the scaled speed up is (12/128) + (1 - 12/128)*32 = approx 29. 
 
+S = 12 + (128 - 32)*32 / 128 = approx 29.
 #### (4C)
 **According to Gustafson-Barsis' law, how much faster could the application theoretically run if it ran across all 32 processors compared to running on a single processor?**
 
@@ -160,7 +161,7 @@ Question C) was a bit nasty in that the answer should indeed be 29 times faster 
 
 **Why theoretically italicized in the above**
 
-???
+MPI communication cost time.
 
 
 ### Question 5
