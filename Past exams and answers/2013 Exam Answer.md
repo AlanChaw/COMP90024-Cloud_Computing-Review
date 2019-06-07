@@ -10,6 +10,7 @@
 
 **Cloud Computing**: jargon term without a commonly accepted non-ambiguous definition, a synonym for distributed computing. There are 5 characteristics: On-demand self-service, Networked access, Resource pooling, Rapid elasticity, Measured service.
 
+
 #### (1B)
 
 **Key Challenges of Large-scale distributed Systems**:
