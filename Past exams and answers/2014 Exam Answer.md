@@ -5,10 +5,16 @@
 #### (1A)
 **Major trends in research and research computing over the last 20 years that have led to the Cloud computing**
 
-1. once had detailed standards
-2. then had open distributed processing with slightly less strict and compliance(顺从的？) demands
-3. Mid-90s: Transparency and Heterogeneity（异质）of computer interactions. Forcus on computer-computer interaction.
+1. The pre-internet era (60s to 80s) Focus: send data
+2. Mid 90s: Focus application to application communication
+3. The web era. The initial scale up.
+4. The Grid dream (00s)
+5. Web services (10s)
+6. The advent of Cloud Computing(10s)
 
+（LMS Discussion Board)
+
+You should also include the "research" and research computing part too in the question, e.g. we are now generating more data than ever and it needs to be stored, processed and we need larger scale infrastructures to support this in a flexible manner etc etc
 
 #### (1B)
 **Evolution of service-oriented architecture support Cloud computing**
@@ -41,6 +47,7 @@ From a RESTful service standpoint, for an operation (or service call) to be idem
 GET, PUT, DELETE, HEAD, OPTIONS and TRACE are Idempotent
 
 POST is not Idempotent
+ 
 
 ### Question 2
 
@@ -69,7 +76,17 @@ POST is not Idempotent
 - Infrastructure(底部结构) as a Service (IaaS) (primary focus of this course) 
  - AWS, Orical Public Cloud, Nectar...
 
-Advantages ???
+- IaaS
+	- Pros: flexibility and customization 
+	- Cons: have to manage a lot of the IT stack
+	
+- PaaS
+	- Pros: The benefits of PaaS are very similar to the benefits of IaaS, but PaaS requires less time and skill for management
+	- Cons: PaaS, like IaaS, can result in unpredictable charges, particularly as applications scale. It offers less flexibility, less customer control and more potential for vendor lock-in than IaaS. 
+
+- SaaS
+	- Pros: ease of use
+	- Cons: IT has little or no control
 
 #### (2B)
 
@@ -133,6 +150,12 @@ Research computing is the software applications used by a research community to 
 
 - real time是从进行开始执行到完成所经历的墙上时钟时间（wall clock）时间，包括其他进程使用的时间片（time slice）和本进程耗费在阻塞（如等待I/O操作完成）上的时间。
 
+CPU-time: 进程时间也称CPU时间，用以度量进程使用的中央处理器资源。  
+
+- real < CPU  表明进程为计算密集型（CPU bound），利用多核处理器的并行执行优势
+- real ≈ CPU  表明进程为计算密集型，未并行执行
+- real > CPU  表明进程为I/O密集型 （I/O bound），多核并行执行优势并不明显
+
 
 ### Question 4
 
@@ -189,7 +212,7 @@ Traditional database ACID properties: In computer science, ACID (Atomicity, Cons
 
 Heterogeneity of data: means that there is variability in the data.
 
-large-scale data processing: ??? 
+large-scale data processing
 
 #### (5B)
 **Role of HDFS in supporting the Apache Hadoop framework**
@@ -204,13 +227,9 @@ A HDFS file is a collection of blocks stored in datanodes, with metadata (such a
 
 The core of Hadoop is a fault tolerant file system that has been explicitly designed to span many nodes
 
-HDFS blocks are much larger than blocks used by an ordinary file system (say, 4 KB versus 128MB), the reasons for this unusual size are:
+HDFS also maintains the replication factor by creating replica of data on other available machines in the cluster if suddenly one machine fails.
 
-- Reduced need for memory to store information about where the blocks are (metadata)
-- More efficient use of the network (with a large block, a reduced number network connections needs to be kept open)
-- Reduced need for seek operations on big files
-- Efficient when most data of a block have to be processed
-
+In Hadoop Failure of one node doesn’t affect accessing (read-write operation) of data in datanode. Multiple copies of same Block will be available in other datanode, So failure of one node will not impact our work and we can make use of block from other datanode when one of the datanode(slaves) fails.
 
 ### Question 6
 

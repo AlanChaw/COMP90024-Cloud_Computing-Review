@@ -94,6 +94,10 @@ SOAP vs ReST
 
 **C) why is the accuracy of the wall-time important to users**
 
+- Elapsed real time, real time, wall-clock time, or wall time is the actual time taken from the start of a computer program to the end. In other words, it is the difference between the time at which a task finishes and the time at which the task started.
+
+- real time是从进行开始执行到完成所经历的墙上时钟时间（wall clock）时间，包括其他进程使用的时间片（time slice）和本进程耗费在阻塞（如等待I/O操作完成）上的时间。
+
 CPU-time: 进程时间也称CPU时间，用以度量进程使用的中央处理器资源。  
 
 - real < CPU  表明进程为计算密集型（CPU bound），利用多核处理器的并行执行优势
@@ -138,6 +142,47 @@ CPU-time: 进程时间也称CPU时间，用以度量进程使用的中央处理�
 
 **b.** Why isn't Shibboleth used to access Cloud-based systems more generally?  
 
+Security challenges:
+
+ - **Authentication** 身份鉴定
+ 
+ - **Authorisation** 授权
+
+ - **Audit** 审计
+
+ - **Confidentiality** 保密性
+
+ - **Privacy** 隐私
+
+ - **Fabric management** 组织管理理
+
+ - **Trust** 信任
+
+ - **Single sign-on**: 
+
+   1. The Grid model needed
+   2. Currently not solved for Cloud-based Iaas
+   3. Onus is non-Cloud developers to define this
+
+ - **Auditing**: logging, intrusion detection, auditing of security in external computer facilities.
+
+ - **Deletion**: 
+   1. data deletion with no direct hard disk
+   2. scale of data
+
+ - **Liabiliry**
+
+ - **Licensing**: 
+
+   1. many license models
+   2. challenges with the cloud delivery model
+
+ - **Workflows**:
+
+	1. Many workflows tools for combing SoA services
+	2. Many workflows models.
+	3. Serious challenges of defining, enforcing, sharing, enacting
+	4. Security-oriented workflows
 
 ## Question 6
 **A) Cloud based IaaS, PaaS, SaaS, and give examples**  
