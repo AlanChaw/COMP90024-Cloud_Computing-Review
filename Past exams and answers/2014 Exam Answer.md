@@ -314,7 +314,22 @@ Security challenges:
 
 #### (7B)
 
+**Applications can be deployed on Clouds by: Creations and deployment of virtual images (snapshots) . Or through scripting the installation and configuration of software applications.**
 
+**a. benefits and drawbacks of the two approches**  
+
+- Snapshot
+	- Benefits: easy to create snapshot and copy the state of one VM to another, no need to write script, easy to operate when deploying small number of VMs
+	- Drawbacks: Requires mass labor work when have hundreds of instances to deploy. Deploying complex cloud systems requires a lot of moving parts. Easy to forget what software you installed, and what steps you took to configure the system
+
+- Automation
+	- Benefits: Provides a record of what you did, Codifies knowledge about the system, Makes process repeatable and programmable
+	- Drawbacks: Have to program and test the scripts mannually. More labor work when the cloud is small. 
+
+**b. Mechanisms used to support these approaches. Refer to specific tools used to support these processes on the Nectar research cloud**
+
+ - Snapshot: NeCTAR Cloud support image service that users can create their own snapshots or use exsisting snapshots of virtual images.
+ - Automation: Ansible - An automation tool for configuring and managing computers. Finer grained set up and configuration of software packages
 
 
 
